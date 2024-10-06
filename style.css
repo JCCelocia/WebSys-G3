@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -21,6 +21,8 @@
         --light-pink-color: #faf4f5;
         --medium-gray-color: #ccc;
         --bg-color: #D9D9D9;
+        --white: #fff;
+        --reminder: #BBB064;
       
         /* Font size */
         --font-size-s: 0.9rem;
@@ -87,8 +89,8 @@ header .navbar {
 .navbar .nav-menu {
     display: flex;
     gap: 70px;
-    padding-left: 10px;
-    padding-right: 120px;
+    padding-left: 30px;
+    padding-right: 100px;
 }
 .navbar .nav-menu .nav-link {
     color: var(--black-color);
@@ -107,6 +109,7 @@ header .navbar {
 
 .image-sizer {
     margin: 0;
+    position: relative;
     width: 1535px;
 }
 .hero-image {
@@ -114,7 +117,65 @@ header .navbar {
     width: 1700px;
     height: 550px;
     opacity: 91%;
-    background-position: center;
-    filter: brightness(60%);
+    filter: brightness(50%);
     
+}
+
+.hero-section .section-content {
+    color: var(--bg-color);
+    position: absolute;
+    
+}
+
+.title {
+    position: absolute;
+    
+    z-index: 10;
+    color: var(--white);
+    font-size: 65px;
+    font-family: 'Italiana';
+    font-weight:lighter;
+    padding: 120px;
+    padding-left: 30px;
+}
+
+.subtitle {
+    position: absolute;
+    z-index: 10;
+    color: var(--white);
+    font-size: 30px;
+    font-family: "Barlow", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    padding: 200px;
+    padding-left: 30px;
+}
+
+.reminder {
+    position: absolute;
+    z-index: 10;
+    color: var(--reminder);
+    font-size: 20px;
+    font-family: "Barlow", sans-serif;
+    font-weight: 450;
+    font-style: italic;
+    padding: 240px;
+    padding-left: 30px;
+}
+
+.Email {
+    top: 115%;
+    left: 55%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+
+.Email button {
+    border: 0;
+    padding: 10px 15px;
+    background: #000000;
+    font-size: 15px;
+    border-radius: 0%;
+    color: #FFDD55;
 }
