@@ -109,6 +109,10 @@ header .navbar {
     font-size: 20px;
 }
 
+.menu-section {
+    background: #EBE7E2;
+}
+
 .menu-section .menu-buttons {
     display: flex;
     gap: 50px;
@@ -128,4 +132,51 @@ header .navbar {
 .menu-section .menu-buttons .Button:hover {
     color: #FFDD55;
     background: var(--black-color);
+}
+
+.allmenu-section {
+    background: #EBE7E2;
+    padding: 50px 0 100px;
+    
+}
+.allmenu-section .allmenu-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 110px;
+    align-items: center;
+    justify-content: space-between;
+    margin:  50px 50px 50px 50px;
+}
+
+.allmenu-section .allmenu-list .allmenu-item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(140% / 6 - 100px);
+}
+
+.allmenu-section .allmenu-list .allmenu-item .allmenu.image {
+    max-width: 100px;
+    aspect-ratio: 1;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+.allmenu-section .allmenu-list .allmenu-item .name {
+    margin: 12px 0;
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-semibold);
+
+}
+
+.allmenu-section .allmenu-list .allmenu-item .text {
+    font-size: var(--font-size-s);
+    font-style: italic;
+   
+}
+
+.allmenu-section .allmenu-list .allmenu-item .allmenu.image {
+    max-width: 50px;
 }
